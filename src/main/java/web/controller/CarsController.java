@@ -15,7 +15,14 @@ public class CarsController {
 
     @GetMapping("/cars")
     public String showCars(@RequestParam(value = "count", required = false) Integer count, Model model){
+        if (count != null && count < 0) {
+            // If count is negative, generate an error and return a page with an error message
+            model.addAttribute("errorMessage", "The number of cars cannot be negative");
+            return "errorPage"; // Assuming you have an errorPage for error messages
+        }
+
         model.addAttribute("cars", carService.getCars(count == null ? 5 : count));
         return "cars";
     }
+
 }

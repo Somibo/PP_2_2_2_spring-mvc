@@ -1,0 +1,35 @@
+Index: target/Spring_MVC/META-INF/MANIFEST.MF
+===================================================================
+diff --git a/target/Spring_MVC/META-INF/MANIFEST.MF b/target/Spring_MVC/META-INF/MANIFEST.MF
+deleted file mode 100644
+--- a/target/Spring_MVC/META-INF/MANIFEST.MF	(revision b68893f217ccae83fe3e286da39eccf78946a356)
++++ /dev/null	(revision b68893f217ccae83fe3e286da39eccf78946a356)
+@@ -1,5 +0,0 @@
+-Manifest-Version: 1.0
+-Created-By: IntelliJ IDEA
+-Built-By: emilt
+-Build-Jdk: Oracle OpenJDK version 21.0.1
+-
+Index: target/Spring_MVC/WEB-INF/pages/index.html
+===================================================================
+diff --git a/target/Spring_MVC/WEB-INF/pages/index.html b/target/Spring_MVC/WEB-INF/pages/index.html
+deleted file mode 100644
+--- a/target/Spring_MVC/WEB-INF/pages/index.html	(revision b68893f217ccae83fe3e286da39eccf78946a356)
++++ /dev/null	(revision b68893f217ccae83fe3e286da39eccf78946a356)
+@@ -1,15 +0,0 @@
+-<!DOCTYPE html>
+-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <title></title>
+-</head>
+-<body>
+-<div>
+-    <th:block th:each="msg : ${messages}">
+-        <h1 th:text="${msg}"></h1>
+-    </th:block>
+-</div>
+-</body>
+-</html>
+\ No newline at end of file
